@@ -1,0 +1,6 @@
+# Raw unprocessed video originals (compressed versions already live in public/assets/video/)
+source-videos/
+
+# OS junk
+Thumbs.db
+.DS_Store

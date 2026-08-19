@@ -1,0 +1,79 @@
+﻿
+
+
+
+	/* 윈도우 */
+	@media	(max-width:769px){
+	.pc		{display:none;}
+	}
+
+	/* 아이패드 이하 */
+	@media	(min-width:769px){
+	.mobile		{display:none;}
+	
+.
+	}
+
+
+#header_wrap { width:100%;   min-width:1200px; height:40px;  margin:0 auto;}
+#top_wrap {
+	width:100%;
+
+min-width:1200px;
+	}
+#top_menu {
+	width:1200px;
+	margin:0 auto;
+	
+	}
+#top_menu ul {
+	float:right;
+	width:155px;
+	}
+#top_menu ul li {
+	float:left;
+	font-size:13px;
+	height:100px;
+	line-height:40px;
+	font-weight:600;
+	}
+#top_menu ul li.first{
+		background:url('../images/menu_bar.gif') right center no-repeat;
+}
+
+#top_menu ul li a {
+	color:#000;
+	display:block;
+	padding:0 10px;
+
+	}
+#top_menu ul li.last a {
+	background:#448926;
+	color:#fff;
+	}
+	
+#header { width:1200px; height:87px; margin:0 auto;}
+#header h1 {
+	float:left;
+	padding-top:17px;
+	}
+.nav_wrap { width: 710px; float:right;  }
+/* @group core nav menu */
+#nav { margin: 10px; padding: 0; list-style: none; height: 44px;  }
+#nav li p{height:49px; line-height:30px; margin-top:24px; font-size:18px; letter-spacing:0.5pt; line-height:20px; font-weight :600; font-family:'Nanum Gothic' Malgun Gothic, NG, NGEN, '돋움', sans-serif !important; }
+#nav li p span{font-size:13px;}
+#nav li { float: left; display: block;  position: relative; z-index: 9999999999999;}
+#nav li a { display: block; padding: 0 25px; line-height: 47px; text-decoration: none; zoom: 1; text-align:center; line-height:18px; color:#242424;    font-family:'Nanum Gothic' Malgun Gothic, NG, NGEN, '돋움', sans-serif !important; }
+#nav li a:hover, #nav li a.hov {  font-weight :600; color:#333; }
+.menu_p{ height:72px;  line-height:30px; margin-top:15px;}
+.menu_p span { font-size:13px;}
+
+/* @group subnav */
+#nav ul { position: absolute; left:-33px; display: none; margin: 0;  z-index:99999999999999; top:70px;  padding: 0; list-style: none; }	
+#nav ul.menu1 li { width:178px; float: left; z-index:99999999999999; }
+#nav ul li:hover { background:#045cb5; }
+
+#nav ul.menu1 a { width:178px; display: block;  line-height:25px; padding: 7px 0px ; z-index:99999999999999;  font-family:'Nanum Gothic' Malgun Gothic, NG, NGEN, '돋움', sans-serif !important;  font-size:13px; color:#6e6e6e; border-bottom:1px #dddddd solid;border-left:1px #dddddd solid;border-right:1px #dddddd solid; background:#fff;}
+.mbd a{  border-top:1px #dddddd solid;}
+#nav ul.menu1 a:hover { font-weight:600;	text-decoration:none;  color:#000;  padding:7px 0px; }
+

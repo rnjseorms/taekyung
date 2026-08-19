@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>태경산업</title>
+<link rel="stylesheet" href="http://www.tk114.co.kr/theme/basic/css/default.css?ver=2303229">
+<link rel="stylesheet" href="http://www.tk114.co.kr/js/font-awesome/css/font-awesome.min.css?ver=2303229">
+<!--[if lte IE 8]>
+<script src="http://www.tk114.co.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://www.tk114.co.kr";
+var g5_bbs_url   = "http://www.tk114.co.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+var g5_theme_shop_url = "http://www.tk114.co.kr/theme/basic/shop";
+var g5_shop_url = "http://www.tk114.co.kr/shop";
+</script>
+<script src="http://www.tk114.co.kr/js/jquery-1.12.4.min.js?ver=2304171"></script>
+<script src="http://www.tk114.co.kr/js/jquery-migrate-1.4.1.min.js?ver=2304171"></script>
+<script src="http://www.tk114.co.kr/js/jquery.menu.js?ver=2304171"></script>
+<script src="http://www.tk114.co.kr/js/common.js?ver=2304171"></script>
+<script src="http://www.tk114.co.kr/js/wrest.js?ver=2304171"></script>
+<script src="http://www.tk114.co.kr/js/placeholders.min.js?ver=2304171"></script>
+</head>
+<body>
+ 
+
+   
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 --><!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+<script src="code.jquery.com/ui/1.12.1/jquery-ui.js"></script>	<!-- 툴팁 제이쿼리 -->
+
+
+<link rel="stylesheet" type="text/css" href="/_css/jquery.simpleLens.css">
+<link rel="stylesheet" type="text/css" href="/_css/jquery.simpleGallery.css">
+<script type="text/javascript" src="/_js/slick.js"></script>
+
+<link href="../_css/main_c.css" rel="stylesheet" type="text/css"> 
+
+ 
+<title>태경산업</title>
+<meta name="description" content="건설기계장비, 하상여과  관련장비, 하부수리/스크류, 항타기분진막 제작설치, 토목관련 장비제작, 제관전문">
+<meta property="og:type" content="website">
+<meta property="og:title" content="태경산업">
+<meta property="og:description" content="건설기계장비, 하상여과  관련장비, 하부수리/스크류, 항타기분진막 제작설치, 토목관련 장비제작, 제관전문">
+<meta property="og:image" content="tk114.co.kr">
+<meta property="og:url" content="tk114.co.kr">
+<link rel="canonical" href="tk114.co.kr">
+
+
+
+
+
+
+<link href="../_css/menu.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/url.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+		$(function () {
+				$('#main_visual').jBanner({ width: '100%', height: 420 });
+			});
+    });
+</script>
+<script type="text/javascript">
+	    $(document).ready(function() {	
+		$('#nav li').hover(function() {
+			$('ul', this).slideDown(200);
+			$(this).children('a:first').addClass("hov");
+		}, function() {
+			$('ul', this).slideUp(100);
+			$(this).children('a:first').removeClass("hov");		
+		});
+	});		// sub_menu slide
+	
+	
+</script>
+
+
+
+  <div class="menubg">
+<div id="top_wrap">
+    	<!--div id="top_menu">
+        	<ul>
+        		<li><a href="javascript:top1();">HOME</a></li>
+        		<li><a href="javascript:top2();">CONTACT US</a></li>
+        	</ul>
+        </div -->
+    </div><!-- top_wrap -->
+	<div id="header">
+    	<h1><a href="../../index.html"><img src="../../images/logo2.png"  style="height:60px;" /></a></h1>
+        <div class="nav_wrap">
+            <ul id="nav">
+
+                <li class="menu_bar"><a href="/bbs/board.php?bo_table=a_01"><p>회사소개</p></a>
+					<ul class="menu1">
+						<li class="mbd"><a href="/bbs/board.php?bo_table=a_01">인사말</a></li>
+						<li><a href="/bbs/board.php?bo_table=a_02">오시는 길</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="menu_bar"><a href="/bbs/board.php?bo_table=b_01"><p> 갤러리</p></a>                                
+                  <ul class="menu1">
+
+					</ul>
+                </li>
+                
+                 <li class="menu_bar"><a href="/bbs/board.php?bo_table=e_01"><p> 인증현황</p></a>                                
+                  <ul class="menu1">
+
+					</ul>
+                </li>
+                              
+                 <li class="menu_bar"><a href="/bbs/board.php?bo_table=c_01" ><p>온라인문의</p></a>
+                    <ul class="menu1">
+                       
+                    </ul>
+                </li>
+
+                 <li class="menu_bar"><a href="/bbs/board.php?bo_table=d_01"><p>자료실</p></a>
+                    <ul class="menu1">
+                      <!-- <li class="mbd"><a href="/bbs/board.php?bo_table=cu01">자료실</a></li>
+                       <li><a href="/bbs/board.php?bo_table=cu02">자료실</a></li>-->              
+                    </ul>
+                </li>
+                
+                
+
+                
+                
+               
+            </ul>
+        </div><!-- nav_wrap -->
+    </div><!-- header -->
+  
+    </div>
+
+
+
+
+	
+  
+	<script>
+	$(document).ready(function () {    
+		//메인 슬라이드
+		$('.sub_imgbox').slick({
+			dots: true, // 도트네비
+			autoplay: true, // 자동 슬라이드
+			pauseOnHover: false, // 슬라이드에 마우스 올렸을때 일시중지
+			autoplaySpeed: 5000, // 슬라이드 속도
+			arrows: false,
+			fade: false
+		});
+	});
+	</script>
+  
+	<div id="visual">	
+		 
+	<div class="sub_imgbox">
+			<section class="section cover01">
+				<div class="textbox">
+<!--					<h2>건설기계장비, 하상여과  관련장비, 하부수리/스크류,<br>항타기분진막 제작설치, 토목관련 장비제작, 제관전문</h2>-->
+					<p>건설기계관련장비 전문업체 태경산업</p>
+				</div>
+			</section>
+			<section class="section cover02">
+				<div class="textbox">
+<!--					<h2>건설기계장비, 하상여과  관련장비, 하부수리/스크류,<br>항타기분진막 제작설치, 토목관련 장비제작, 제관전문</h2>-->
+					<p>건설기계관련장비 전문업체 태경산업</p>
+				</div>
+			</section>
+		</div>	
+	</div> 
+	<!--//Visual -->
+
+
+<!-- 컨텐츠 영역 -->
+<div id="main1200_wrap">
+<div class="main1200_w">
+
+	<div class="main_top_tit">
+		<ul><li>부상토 제거장치는 작업자의 안전을 위해 ​제작된 국내 유일의 안전장치 입니다.</li></ul>
+	</div><!--//main_top_tit-->
+	<div class="main_top_tit1">
+		<ul><li>총괄책임 담당자 : 010-2204-7586(견적/설치/A/S)</li></ul>
+	</div><!--//main_top_tit-->
+	<div class="main_con_wrap">
+		<div class="tit">부상토 제거 방식에 따른<br>부상토 제거율 비교</div>
+		<div class="tit_line"><ul><li></li></ul></div>
+		<div class="main_con1">
+			<ul>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con1_img1.jpg" alt="이미지"><br>
+						<p>포스코 천안현장</p>
+					</a>
+				</li>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con1_img2.jpg" alt="이미지"><br>
+						<p>포스코 천안현장</p>
+					</a>
+				</li>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con1_img3.jpg" alt="이미지"><br>
+						<p>SK 김포현장</p>
+					</a>
+				</li>
+			</ul>
+		</div><!--//main_con1-->
+	</div><!--//main_con_wrap-->
+
+</div><!--//main1200_w-->
+</div><!--//main1200_wrap-->
+
+
+<div id="main100_wrap">
+<div class="main100_w">
+
+	<div class="main_con_wrap">
+		<div class="tit">부상토 상태에 따른 부상토 제거</div>
+		<div class="tit_line"><ul><li></li></ul></div>
+		<div class="main_con2">
+			<ul>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con2_img1.jpg" alt="이미지"><br>
+						<p>SK 김포현장</p>
+					</a>
+				</li>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con2_img2.jpg" alt="이미지"><br>
+						<p>자이 창원현장</p>
+					</a>
+				</li>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con2_img3.jpg" alt="이미지"><br>
+						<p>자이 창원현장</p>
+					</a>
+				</li>
+				<li>
+					<a href="/bbs/board.php?bo_table=b_01">
+						<img src="images/con2_img4.jpg" alt="이미지"><br>
+						<p>자이 창원현장</p>
+					</a>
+				</li>
+			</ul>
+		</div><!--//main_con1-->
+	</div><!--//main_con_wrap-->
+
+	<div class="main_con2_more"><ul><li><a href="" class="m_more" style="color:#fff;">더보기</a></li></ul></div>
+
+
+</div><!--//main100_w-->
+</div><!--//main100_wrap-->
+
+
+
+<div id="main1200_wrap">
+<div class="main1200_w">
+	
+	<div class="main_con_wrap">
+		<div class="tit">부상토 관련 안전재해</div>
+		<div class="tit_line"><ul><li></li></ul></div>
+		<div class="main_con3">
+			<ul><li>
+				<img src="images/n_img.jpg" alt="이미지">
+			</li></ul>
+		</div><!--//main_con3-->
+	</div><!--//main_con_wrap-->
+
+</div><!--//main1200_w-->
+</div><!--//main1200_wrap-->
+
+
+<div id="main100_wrap">
+<div class="main100_w">
+
+	<div class="main_con_wrap">
+		<div class="tit">고객사</div>
+		<div class="tit_line"><ul><li></li></ul></div>
+		<div class="main_con4">
+			<ul>
+				<li><a href="https://www.skecoplant.com/" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+				<li><a href="https://www.poscoenc.com:446/ko/index.aspx"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+				<li><a href="http://www.xicna.com/cont/main.do" target="_blank"><img src="images/banner_logo3.jpg" alt="협력업체로고"></a></li>
+<!--				<li><a href="https://www.ssyenc.co.kr/ko/main/main.asp"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+								<li><a href="https://www.kccworld.net/main.do" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+
+				<li><a href="https://www.ssyenc.co.kr/ko/main/main.asp"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+								<li><a href="https://www.kccworld.net/main.do" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+				<li><a href="https://www.ssyenc.co.kr/ko/main/main.asp"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+								<li><a href="https://www.kccworld.net/main.do" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+				<li><a href="https://www.ssyenc.co.kr/ko/main/main.asp"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+								<li><a href="https://www.kccworld.net/main.do" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+				<li><a href="https://www.ssyenc.co.kr/ko/main/main.asp"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+								<li><a href="https://www.kccworld.net/main.do" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+				<li><a href="https://www.ssyenc.co.kr/ko/main/main.asp"  target="_blank"><img src="images/banner_logo2.jpg" alt="협력업체로고"></a></li>
+				<li><a href="https://www.kccworld.net/main.do" target="_blank"><img src="images/banner_logo1.jpg" alt="협력업체로고"></a></li>
+-->
+			</ul>
+		</div><!--//main_con1-->
+	</div><!--//main_con_wrap-->
+
+</div><!--//main100_w-->
+</div><!--//main100_wrap-->
+
+
+
+
+
+
+
+
+ <div id="foot">
+      <div class="footer">
+      
+             <h2><img src="../../images/logo2.png" /></h2>
+	<ul>
+		<li>주소: 경기도 화성시 봉담읍 왕림리 532</li>
+		<li>TEL : 031-297-1249&nbsp;&nbsp;l&nbsp;&nbsp;H.P : 010-2204-7586&nbsp;&nbsp;l&nbsp;&nbsp;FAX : 031-227-4715&nbsp;&nbsp;l&nbsp;&nbsp;E-mail: tk8108@naver.com</li>
+		<li class="copy">COPYRIGHTⓒ<b> 태경산업 </b>ALL RIGHTS RESERVED.</li>
+	</ul>
+
+      </div>
+      </div>
+      
+</body>
+</html>
+
+
+
+</body>
+</html>
