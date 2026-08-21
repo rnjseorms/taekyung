@@ -154,7 +154,10 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/logo.png)",
       "Bash(vercel domains *)",
       "Bash(curl -s https://taekyungsanup.vercel.app/index.html)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/og-image.jpg)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/og-image.jpg)",
+      "Bash(curl -sI https://taekyungsanup.vercel.app/assets/img/og-image.jpg)",
+      "WebFetch(domain:developers.kakao.com)",
+      "Bash(curl -s https://taekyungsanup.vercel.app/pile-lifter.html)"
     ],
     "additionalDirectories": [
       "C:\\vibecoding\\taekyung",
