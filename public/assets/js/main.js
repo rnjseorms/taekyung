@@ -248,7 +248,7 @@
     }
   });
 
-  // Contact form -> mailto fallback (static site, no backend)
+  // Contact form -> POST to serverless function, which emails tk5448@naver.com via Resend
   var form = document.querySelector("#inquiry-form");
   if (form) {
     form.addEventListener("submit", function (e) {
@@ -258,9 +258,10 @@
       var email = form.querySelector("#f-email").value.trim();
       var subject = form.querySelector("#f-subject").value.trim();
       var message = form.querySelector("#f-message").value.trim();
+      var status = form.querySelector(".form-status");
+      var submitBtn = form.querySelector('button[type="submit"]');
 
       if (!name || !phone || !message) {
-        var status = form.querySelector(".form-status");
         if (status) {
           status.textContent = "이름, 연락처, 문의내용은 필수 입력 항목입니다.";
           status.style.color = "#DC2626";
@@ -268,11 +269,39 @@
         return;
       }
 
-      var body = "이름: " + name + "\n연락처: " + phone + "\n이메일: " + (email || "-") + "\n\n문의내용:\n" + message;
-      var mailto = "mailto:tk5448@naver.com" +
-        "?subject=" + encodeURIComponent("[홈페이지 문의] " + (subject || name)) +
-        "&body=" + encodeURIComponent(body);
-      window.location.href = mailto;
+      if (submitBtn) submitBtn.disabled = true;
+      if (status) {
+        status.textContent = "문의를 전송하는 중입니다...";
+        status.style.color = "";
+      }
+
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: name, phone: phone, email: email, subject: subject, message: message })
+      })
+        .then(function (res) {
+          return res.json().then(function (data) {
+            if (!res.ok) throw new Error(data.error || "전송 실패");
+            return data;
+          });
+        })
+        .then(function () {
+          if (status) {
+            status.textContent = "문의가 정상적으로 접수되었습니다. 빠르게 답변드리겠습니다.";
+            status.style.color = "#16A34A";
+          }
+          form.reset();
+        })
+        .catch(function (err) {
+          if (status) {
+            status.textContent = err.message || "전송 중 오류가 발생했습니다. 전화로 문의해 주세요.";
+            status.style.color = "#DC2626";
+          }
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 })();

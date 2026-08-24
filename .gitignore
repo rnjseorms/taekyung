@@ -4,3 +4,6 @@ source-videos/
 # OS junk
 Thumbs.db
 .DS_Store
+
+# Local Claude Code permission cache (can accumulate secrets from commands)
+.claude/settings.local.json
