@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
       "<p><strong>문의내용:</strong><br>" + escapeHtml(message).replace(/\n/g, "<br>") + "</p>";
 
     await resend.emails.send({
-      from: "태경산업 홈페이지 <onboarding@resend.dev>",
+      from: "태경산업 홈페이지 <noreply@tk5448.com>",
       to: "tk5448@naver.com",
       replyTo: email || undefined,
       subject: "[홈페이지 문의] " + (subject || name),
