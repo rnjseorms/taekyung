@@ -539,7 +539,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .filter-btn:hover { border-color: var(--accent); color: var(--accent-dark); }
 .filter-btn.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
 
-.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .gallery-item {
   aspect-ratio: 1/1;
   border-radius: 6px;
@@ -560,6 +560,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   transition: opacity 200ms ease;
 }
 .gallery-item:hover .cap { opacity: 1; }
+
+.gallery-item.no-crop {
+  aspect-ratio: auto;
+  background: var(--white);
+  border: 1px solid var(--slate-100);
+  display: flex;
+  flex-direction: column;
+}
+.gallery-item.no-crop img { width: 100%; height: auto; object-fit: contain; }
+.gallery-item.no-crop:hover img { transform: none; }
+.gallery-item.no-crop .cap {
+  position: static;
+  opacity: 1;
+  background: none;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 14px;
+  text-align: center;
+}
 
 /* Lightbox */
 .lightbox {

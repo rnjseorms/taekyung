@@ -118,7 +118,32 @@
         <h2>현장 사진 모음</h2>
         <p>이미지를 클릭하면 크게 볼 수 있습니다.</p>
       </div>
-      <div class="gallery-grid" id="gallery-grid"></div>
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item no-crop" data-lightbox="assets/img/gallery/eq-auger1.jpg" data-caption="하부오거 부착용">
+          <img src="assets/img/gallery/eq-auger1.jpg" alt="하부오거 부착용" loading="lazy">
+          <span class="cap">하부오거 부착용</span>
+        </div>
+        <div class="gallery-item no-crop" data-lightbox="assets/img/gallery/eq-auxleader.jpg" data-caption="보조리다 부착용">
+          <img src="assets/img/gallery/eq-auxleader.jpg" alt="보조리다 부착용" loading="lazy">
+          <span class="cap">보조리다 부착용</span>
+        </div>
+        <div class="gallery-item no-crop" data-lightbox="assets/img/gallery/eq-cip.jpg" data-caption="CIP 전용">
+          <img src="assets/img/gallery/eq-cip.jpg" alt="CIP 전용" loading="lazy">
+          <span class="cap">CIP 전용</span>
+        </div>
+        <div class="gallery-item no-crop" data-lightbox="assets/img/gallery/eq-powerpack.jpg" data-caption="파워팩">
+          <img src="assets/img/gallery/eq-powerpack.jpg" alt="파워팩" loading="lazy">
+          <span class="cap">파워팩</span>
+        </div>
+        <div class="gallery-item no-crop" data-lightbox="assets/img/gallery/eq-auger2.jpg" data-caption="하부오거 부착용">
+          <img src="assets/img/gallery/eq-auger2.jpg" alt="하부오거 부착용" loading="lazy">
+          <span class="cap">하부오거 부착용</span>
+        </div>
+        <div class="gallery-item no-crop" data-lightbox="assets/img/gallery/eq-remote.jpg" data-caption="무선조작 리모컨">
+          <img src="assets/img/gallery/eq-remote.jpg" alt="무선조작 리모컨" loading="lazy">
+          <span class="cap">무선조작 리모컨</span>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -178,23 +203,15 @@
 <script>
   (function () {
     var grid = document.getElementById("gallery-grid");
-    var captions = {
-      21: "파워팩",
-      22: "하부오거 부착용",
-      23: "무선조작 리모콘",
-      24: "하부오거 부착용",
-      25: "보조리다 부착용",
-      26: "CIP 전용"
-    };
     var html = "";
-    for (var i = 1; i <= 26; i++) {
+    for (var i = 1; i <= 3; i++) {
       var n = String(i).padStart(2, "0");
-      var cap = captions[i] || ("현장 시공사진 " + n);
+      var cap = "현장 시공사진 " + n;
       html += '<div class="gallery-item" data-lightbox="assets/img/gallery/g' + n + '.jpg" data-caption="' + cap + '">' +
               '<img src="assets/img/gallery/g' + n + '.jpg" alt="' + cap + '" loading="lazy">' +
               '<span class="cap">' + cap + '</span></div>';
     }
-    grid.innerHTML = html;
+    grid.insertAdjacentHTML("beforeend", html);
   })();
 </script>
 <script src="assets/js/main.js"></script>
