@@ -186,7 +186,12 @@
       "Bash(curl -s -o /dev/null -w \"eq-remote: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/gallery/eq-remote.jpg)",
       "Bash(curl -s http://localhost:8000/assets/css/style.css)",
       "Bash(curl -s http://localhost:8000/gallery.html)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://taekyungsanup.vercel.app/gallery.html)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://taekyungsanup.vercel.app/gallery.html)",
+      "Bash(curl -s -o /dev/null -w \"tk5448.com: %{http_code}\\\\n\" https://tk5448.com/index.html)",
+      "Bash(curl -s -o /dev/null -w \"www.tk5448.com: %{http_code}\\\\n\" https://www.tk5448.com/index.html)",
+      "Bash(vercel inspect *)",
+      "Bash(curl -s https://tk5448.com/index.html)",
+      "Bash(curl -s -o /dev/null -w \"vercel alias: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/index.html)"
     ],
     "additionalDirectories": [
       "C:\\vibecoding\\taekyung",
