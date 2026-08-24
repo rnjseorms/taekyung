@@ -568,7 +568,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display: flex;
   flex-direction: column;
 }
-.gallery-item.no-crop img { width: 100%; height: auto; object-fit: contain; }
+.gallery-item.no-crop .frame { width: 100%; aspect-ratio: 3/4; overflow: hidden; }
+.gallery-item.no-crop img { width: 100%; height: 100%; object-fit: contain; }
 .gallery-item.no-crop:hover img { transform: none; }
 .gallery-item.no-crop .cap {
   position: static;
