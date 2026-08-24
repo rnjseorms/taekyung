@@ -183,7 +183,10 @@
       "Bash(curl -s -o /dev/null -w \"acc-bit: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/safety/acc-bit.jpg)",
       "Bash(curl -s -o /dev/null -w \"g01: %{http_code}\\\\n\" http://localhost:8000/assets/img/gallery/g01.jpg)",
       "Bash(curl -s -o /dev/null -w \"g04\\(should 404\\): %{http_code}\\\\n\" http://localhost:8000/assets/img/gallery/g04.jpg)",
-      "Bash(curl -s -o /dev/null -w \"eq-remote: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/gallery/eq-remote.jpg)"
+      "Bash(curl -s -o /dev/null -w \"eq-remote: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/gallery/eq-remote.jpg)",
+      "Bash(curl -s http://localhost:8000/assets/css/style.css)",
+      "Bash(curl -s http://localhost:8000/gallery.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://taekyungsanup.vercel.app/gallery.html)"
     ],
     "additionalDirectories": [
       "C:\\vibecoding\\taekyung",
