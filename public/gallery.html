@@ -178,9 +178,16 @@
 <script>
   (function () {
     var grid = document.getElementById("gallery-grid");
-    var captions = {};
+    var captions = {
+      21: "파워팩",
+      22: "하부오거 부착용",
+      23: "무선조작 리모콘",
+      24: "하부오거 부착용",
+      25: "보조리다 부착용",
+      26: "CIP 전용"
+    };
     var html = "";
-    for (var i = 1; i <= 20; i++) {
+    for (var i = 1; i <= 26; i++) {
       var n = String(i).padStart(2, "0");
       var cap = captions[i] || ("현장 시공사진 " + n);
       html += '<div class="gallery-item" data-lightbox="assets/img/gallery/g' + n + '.jpg" data-caption="' + cap + '">' +
