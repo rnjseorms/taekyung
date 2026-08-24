@@ -178,7 +178,9 @@
       "Bash(curl -s https://taekyungsanup.vercel.app/gallery.html)",
       "Bash(mkdir -p \"C:/Users/ADMINI~1/AppData/Local/Temp/claude/c--vibecoding-taekyung/daa4bb51-9f6c-4bd6-ac8f-473c61f22f65/scratchpad/bsaeeoge\")",
       "Bash(vercel ls *)",
-      "Bash(curl -s -o /dev/null -w \"g26: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/gallery/g26.jpg)"
+      "Bash(curl -s -o /dev/null -w \"g26: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/gallery/g26.jpg)",
+      "Bash(curl -s -o /dev/null -w \"index: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/index.html)",
+      "Bash(curl -s -o /dev/null -w \"acc-bit: %{http_code}\\\\n\" https://taekyungsanup.vercel.app/assets/img/safety/acc-bit.jpg)"
     ],
     "additionalDirectories": [
       "C:\\vibecoding\\taekyung",
