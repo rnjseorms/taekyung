@@ -754,6 +754,14 @@ textarea { resize: vertical; min-height: 140px; }
     background: linear-gradient(to right, transparent, rgba(15,23,42,0.15));
     pointer-events: none;
   }
+
+  /* Hero heading: shrink further so it wraps cleanly instead of leaving an orphan line */
+  .hero h1 { font-size: clamp(1.5rem, 7vw, 2rem); }
+
+  /* Contact form: desktop padding is oversized on narrow screens */
+  .form-card { padding: 24px; }
+  .contact-info-card { padding: 28px 22px; }
+  .contact-grid { gap: 24px; }
 }
 
 /* Mobile nav drawer */
