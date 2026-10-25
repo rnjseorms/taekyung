@@ -1,0 +1,13 @@
+source-videos/
+site/
+scripts/
+*.pdf
+public/수정/
+public/KakaoTalk_*.jpg
+public/부상토제거장치 사진.png
+public/파일인양기 사진.png
+public/태경산업_ISO9001_2015_인증서사본_1.jpg
+무선리모컨.jpg
+오픈그래프.png
+Thumbs.db
+.DS_Store

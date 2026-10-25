@@ -7,3 +7,5 @@ Thumbs.db
 
 # Local Claude Code permission cache (can accumulate secrets from commands)
 .claude/settings.local.json
+
+.vercel
