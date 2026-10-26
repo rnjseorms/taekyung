@@ -2,9 +2,34 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "tk5448.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "tk5448.com"
+        }
+      ],
       "destination": "https://www.tk5448.com/:path*",
       "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/video/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
     }
   ]
 }
