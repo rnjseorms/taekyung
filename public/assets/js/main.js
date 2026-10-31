@@ -56,7 +56,7 @@
 
     var closeLightbox = function () {
       lightbox.classList.remove("open");
-      lightboxImg.src = "";
+      lightboxImg.removeAttribute("src");
     };
 
     lightboxItems.forEach(function (el, i) {
@@ -269,6 +269,15 @@
         return;
       }
 
+      var agree = form.querySelector("#f-agree");
+      if (agree && !agree.checked) {
+        if (status) {
+          status.textContent = "개인정보 수집·이용에 동의해 주세요.";
+          status.style.color = "#DC2626";
+        }
+        return;
+      }
+
       if (submitBtn) submitBtn.disabled = true;
       if (status) {
         status.textContent = "문의를 전송하는 중입니다...";
@@ -281,8 +290,8 @@
         body: JSON.stringify({ name: name, phone: phone, email: email, subject: subject, message: message })
       })
         .then(function (res) {
-          return res.json().then(function (data) {
-            if (!res.ok) throw new Error(data.error || "전송 실패");
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            if (!res.ok) throw new Error(data.error || "전송 중 오류가 발생했습니다. 전화(010-5448-8108)로 문의해 주세요.");
             return data;
           });
         })
