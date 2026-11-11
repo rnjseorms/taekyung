@@ -1,14 +1,14 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "has": [
         {
           "type": "host",
           "value": "tk5448.com"
         }
       ],
-      "destination": "https://www.tk5448.com/:path*",
+      "destination": "https://www.tk5448.com/$1",
       "permanent": true
     }
   ],
